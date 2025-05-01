@@ -30,7 +30,7 @@ class ContentColumn extends StatelessWidget {
               TextSpan(
                 text: seconds,
                 style: GoogleFonts.concertOne(
-                  textStyle: const TextStyle(fontSize: 13, color: Colors.white),
+                  textStyle: const TextStyle(fontSize: 12, color: Colors.white),
                 ),
               ),
             ],
