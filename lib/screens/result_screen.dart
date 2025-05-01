@@ -34,12 +34,13 @@ class _ResultScreenState extends State<ResultScreen> {
                 border: Border.all(color: Colors.white),
               ),
 
-              height: 300,
+              height: 280,
               width: 500,
               child: Center(
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 2),
                   child: Column(
+                    spacing: 3,
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
@@ -71,6 +72,7 @@ class _ResultScreenState extends State<ResultScreen> {
                               color: const Color.fromARGB(255, 43, 74, 142),
                             ),
                           ),
+                          Padding(padding: EdgeInsets.only(bottom: 30)),
                         ],
                       ),
 
