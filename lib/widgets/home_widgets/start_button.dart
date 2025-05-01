@@ -28,7 +28,7 @@ class StartButton extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const MyWidget()),
+              MaterialPageRoute(builder: (context) => const SetWidget()),
             );
           },
           child: Text(
