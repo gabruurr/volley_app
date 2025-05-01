@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:volley_app/screens/set.dart';
+import 'package:volley_app/screens/set_screen.dart';
 import 'package:volley_app/widgets/blue_button.dart';
 
 class StartButton extends StatelessWidget {

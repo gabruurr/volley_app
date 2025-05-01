@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:volley_app/screens/result_details.dart';
-import 'package:volley_app/screens/set.dart';
+import 'package:volley_app/screens/score_screen.dart';
+import 'package:volley_app/screens/set_screen.dart';
 import 'package:volley_app/widgets/blue_button.dart';
 
 class ResultScreen extends StatefulWidget {
@@ -86,7 +86,7 @@ class _ResultScreenState extends State<ResultScreen> {
                             offset: -5,
                             label: "Terminar",
                             foreground: Colors.white,
-                            destiny: DetailsScreen(),
+                            destiny: ScoreScreen(),
                           ),
                           Padding(padding: EdgeInsets.all(8)),
                           BlueButton(

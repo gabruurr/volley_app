@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class TeamIcon extends StatelessWidget {
   final String letter;
   final String name;
+
   const TeamIcon({super.key, required this.name, required this.letter});
 
   @override
@@ -14,7 +15,7 @@ class TeamIcon extends StatelessWidget {
           radius: 18,
           backgroundColor: const Color.fromARGB(255, 184, 221, 245),
           child: Transform.translate(
-            offset: Offset(0, -2),
+            offset: const Offset(0, -2),
             child: Text(
               letter,
               style: GoogleFonts.concertOne(
@@ -25,15 +26,16 @@ class TeamIcon extends StatelessWidget {
             ),
           ),
         ),
-        Text(
-          name,
-          style: GoogleFonts.concertOne(
-            textStyle: const TextStyle(
-              fontSize: 18,
-              color: Color.fromARGB(255, 43, 74, 142),
+        if (name.trim().isNotEmpty)
+          Text(
+            name,
+            style: GoogleFonts.concertOne(
+              textStyle: const TextStyle(
+                fontSize: 18,
+                color: Color.fromARGB(255, 43, 74, 142),
+              ),
             ),
           ),
-        ),
       ],
     );
   }

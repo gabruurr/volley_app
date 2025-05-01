@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:volley_app/screens/home.dart';
-import 'package:volley_app/screens/result_set.dart';
+import 'package:volley_app/screens/home_screen.dart';
+import 'package:volley_app/screens/result_screen.dart';
 import 'package:volley_app/widgets/blue_button.dart';
 
 import '../widgets/set_widgets/action_column.dart';
