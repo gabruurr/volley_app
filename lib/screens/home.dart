@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:volley_app/screens/result_set.dart';
 import 'package:volley_app/widgets/home_widgets/home_header.dart';
 import 'package:volley_app/widgets/home_widgets/start_button.dart';
 import 'package:volley_app/widgets/home_widgets/teams_section.dart';

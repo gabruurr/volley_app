@@ -1,28 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:volley_app/screens/home.dart';
+import 'package:volley_app/screens/result_set.dart';
+import 'package:volley_app/widgets/blue_button.dart';
 
 import '../widgets/set_widgets/action_column.dart';
 import '../widgets/set_widgets/team_icon.dart';
 
-class SetWidget extends StatefulWidget {
-  const SetWidget({super.key});
+class SetScreen extends StatefulWidget {
+  const SetScreen({super.key});
 
   @override
-  State<SetWidget> createState() => _SetWidgetState();
+  State<SetScreen> createState() => _SetScreenState();
 }
 
-class _SetWidgetState extends State<SetWidget> {
+class _SetScreenState extends State<SetScreen> {
   @override
   void initState() {
     SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft]);
     super.initState();
-  }
-
-  @override
-  void dispose() {
-    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-    super.dispose();
   }
 
   @override
@@ -31,6 +28,15 @@ class _SetWidgetState extends State<SetWidget> {
       appBar: AppBar(
         backgroundColor: const Color(0xFF00ADC3),
         foregroundColor: Colors.white,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => HomeScreen()),
+            );
+          },
+          icon: Icon(Icons.arrow_back),
+        ),
         actions: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
@@ -142,36 +148,14 @@ class _SetWidgetState extends State<SetWidget> {
                           ],
                         ),
                       ),
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 15,
-                            vertical: 2,
-                          ),
-                          backgroundColor: const Color.fromARGB(
-                            255,
-                            43,
-                            74,
-                            142,
-                          ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8),
-                            side: const BorderSide(color: Colors.white),
-                          ),
-                        ),
-                        onPressed: () {},
-                        child: Transform.translate(
-                          offset: Offset(0, -5),
-                          child: Text(
-                            "Placar Geral",
-                            style: GoogleFonts.concertOne(
-                              textStyle: const TextStyle(
-                                fontSize: 23,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ),
-                        ),
+                      BlueButton(
+                        height: 2,
+                        widht: 15,
+                        fontSize: 23,
+                        label: "Placar Geral",
+                        offset: -5,
+                        foreground: Colors.white,
+                        destiny: ResultScreen(),
                       ),
                     ],
                   ),
