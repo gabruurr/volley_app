@@ -1,16 +1,34 @@
-# volley_app
+# Volley_app
 
-A new Flutter project.
+Este projeto Flutter consiste apenas no layout de um app de Vôlei fictício.
 
-## Getting Started
+O foco está na construção das telas e no design da interface do usuário. Nenhuma lógica de negócios, armazenamento de dados ou controle de partidas foi implementado — este é um projeto puramente visual.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Telas
+Tela Inicial
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Descrição: Tela com o nome do app, botão de início e logotipo.
+![](assets/tela1.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+Tela de Sets e Pontuação
+
+Descrição: Interface de controle dos sets, com botões de pontuação para cada time.
+![](assets/tela2.png)
+
+Tela de Resultado do Set
+
+Descrição: Exibe a equipe vendedora
+![](assets/tela3.png)
+
+Tela de Placar Geral
+
+Descrição: Exibe um resumo visual dos sets e pontuações acumuladas.
+![](assets/tela4.png)
+
+Tela de Estatísticas da Partida
+
+Descrição: Mostra estatísticas individuais de uma única partida (Aces, Ataques, Bloqueios e Erros).
+![](assets/tela5.png)

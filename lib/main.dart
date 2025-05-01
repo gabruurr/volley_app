@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:volley_app/widgets/home_widgets/home_header.dart';
 import 'package:volley_app/widgets/home_widgets/start_button.dart';
 import 'package:volley_app/widgets/home_widgets/teams_section.dart';
@@ -7,6 +8,7 @@ import 'package:volley_app/widgets/home_widgets/teams_section.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  GoogleFonts.config.allowRuntimeFetching = false;
   runApp(HomeScreen());
 }
 
