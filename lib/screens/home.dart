@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:volley_app/screens/result_set.dart';
 import 'package:volley_app/widgets/home_widgets/home_header.dart';
 import 'package:volley_app/widgets/home_widgets/start_button.dart';
 import 'package:volley_app/widgets/home_widgets/teams_section.dart';
@@ -10,8 +11,19 @@ void main() async {
   runApp(HomeScreen());
 }
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
+  void initState() {
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
