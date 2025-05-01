@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:volley_app/widgets/home_widgets/home_header.dart';
 import 'package:volley_app/widgets/home_widgets/start_button.dart';
 import 'package:volley_app/widgets/home_widgets/teams_section.dart';
 
-void main() {
-  runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  runApp(HomeScreen());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
