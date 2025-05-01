@@ -50,9 +50,10 @@ class _ScoreScreenState extends State<ScoreScreen> {
           children: [
             Expanded(
               child: Column(
+                spacing: 7,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(bottom: 30),
+                    padding: const EdgeInsets.only(bottom: 3),
                     child: Text(
                       "PLACAR GERAL",
                       style: const TextStyle(
@@ -194,7 +195,6 @@ class _ScoreScreenState extends State<ScoreScreen> {
                       ),
                     ],
                   ),
-                  Spacer(flex: 3),
                   Container(
                     height: 40,
                     width: double.infinity,

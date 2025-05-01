@@ -54,7 +54,7 @@ class _SetScreenState extends State<SetScreen> {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    padding: const EdgeInsets.only(bottom: 3),
                     child: Row(
                       spacing: 75,
                       mainAxisAlignment: MainAxisAlignment.center,

@@ -45,10 +45,9 @@ class StatsDetails extends StatelessWidget {
                       name,
                       style: TextStyle(
                         fontFamily: 'ConcertOne',
-                          fontSize: 20,
-                          color: Colors.white,
-                        ),
-                      
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
                     ),
                   ],
                 ),
@@ -60,7 +59,7 @@ class StatsDetails extends StatelessWidget {
                     children: [
                       Text(
                         "Aces",
-                        style:TextStyle(
+                        style: TextStyle(
                           fontFamily: 'ConcertOne',
                           fontSize: 18,
                           fontWeight: FontWeight.bold,

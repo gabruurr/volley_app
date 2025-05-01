@@ -37,7 +37,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
       backgroundColor: const Color(0xFF00ADC3),
       body: SafeArea(
         child: Column(
-          spacing: 8,
+          spacing: 5,
           children: [
             Row(
               spacing: 8,
@@ -46,11 +46,10 @@ class _DetailsScreenState extends State<DetailsScreen> {
                 Text(
                   "Estatsísticas da partida",
                   style: const TextStyle(
-                      fontFamily: 'ConcertOne',
-                      fontSize: 26,
-                      color: Color(0xFF2B4A8E),
-                    ),
-                  
+                    fontFamily: 'ConcertOne',
+                    fontSize: 26,
+                    color: Color(0xFF2B4A8E),
+                  ),
                 ),
                 Image.asset('assets/ball.png', height: 30),
               ],
