@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../set_widgets/team_icon.dart';
 
@@ -44,12 +43,12 @@ class StatsDetails extends StatelessWidget {
                     TeamIcon(name: "", letter: letterTeam),
                     Text(
                       name,
-                      style: GoogleFonts.concertOne(
-                        textStyle: const TextStyle(
+                      style: TextStyle(
+                        fontFamily: 'ConcertOne',
                           fontSize: 20,
                           color: Colors.white,
                         ),
-                      ),
+                      
                     ),
                   ],
                 ),
@@ -61,14 +60,16 @@ class StatsDetails extends StatelessWidget {
                     children: [
                       Text(
                         "Aces",
-                        style: GoogleFonts.concertOne(
+                        style:TextStyle(
+                          fontFamily: 'ConcertOne',
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Text(
                         "$aces",
-                        style: GoogleFonts.concertOne(
+                        style: TextStyle(
+                          fontFamily: 'ConcertOne',
                           color: Theme.of(context).colorScheme.onPrimary,
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -84,14 +85,16 @@ class StatsDetails extends StatelessWidget {
                     children: [
                       Text(
                         "Ataques",
-                        style: GoogleFonts.concertOne(
+                        style: TextStyle(
+                          fontFamily: 'ConcertOne',
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Text(
                         "$attacks",
-                        style: GoogleFonts.concertOne(
+                        style: TextStyle(
+                          fontFamily: 'ConcertOne',
                           color: Theme.of(context).colorScheme.onPrimary,
 
                           fontSize: 18,
@@ -108,14 +111,16 @@ class StatsDetails extends StatelessWidget {
                     children: [
                       Text(
                         "Bloqueios",
-                        style: GoogleFonts.concertOne(
+                        style: TextStyle(
+                          fontFamily: 'ConcertOne',
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Text(
                         "$blocks",
-                        style: GoogleFonts.concertOne(
+                        style: TextStyle(
+                          fontFamily: 'ConcertOne',
                           color: Theme.of(context).colorScheme.onPrimary,
 
                           fontSize: 18,
@@ -132,14 +137,16 @@ class StatsDetails extends StatelessWidget {
                     children: [
                       Text(
                         "Erros",
-                        style: GoogleFonts.concertOne(
+                        style: TextStyle(
+                          fontFamily: 'ConcertOne',
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Text(
                         "$errors",
-                        style: GoogleFonts.concertOne(
+                        style: TextStyle(
+                          fontFamily: 'ConcertOne',
                           color: Theme.of(context).colorScheme.onPrimary,
 
                           fontSize: 18,

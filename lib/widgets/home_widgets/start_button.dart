@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:volley_app/screens/set_screen.dart';
 import 'package:volley_app/widgets/blue_button.dart';
 
@@ -13,8 +12,10 @@ class StartButton extends StatelessWidget {
       children: [
         Text(
           "Jogo Casado",
-          style: GoogleFonts.concertOne(
-            textStyle: TextStyle(fontSize: 25, color: Colors.white),
+          style: TextStyle(
+            fontSize: 25,
+            fontFamily: 'ConcertOne',
+            color: Colors.white,
           ),
         ),
         BlueButton(
@@ -24,7 +25,7 @@ class StartButton extends StatelessWidget {
           label: "Iniciar",
           foreground: Colors.white,
           destiny: SetScreen(),
-          offset: -5,
+          offset: -2,
         ),
       ],
     );

@@ -29,7 +29,13 @@ flutter_icons:
 
 
 flutter:
+ fonts:
+   - family: ConcertOne
+     fonts:
+       - asset: assets/fonts/ConcertOne-Regular.ttf
+      
 
  assets:
   - assets/ball.png
+  - assets/fonts/
  uses-material-design: true

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class TeamsSection extends StatelessWidget {
   const TeamsSection({super.key});
@@ -21,12 +20,14 @@ class TeamsSection extends StatelessWidget {
           child: RotatedBox(
             quarterTurns: -1,
             child: Transform.translate(
-              offset: Offset(0, 23),
+              offset: Offset(0, 33),
               child: Text(
                 "TIMES",
                 textAlign: TextAlign.center,
-                style: GoogleFonts.concertOne(
-                  textStyle: TextStyle(fontSize: 45, color: Colors.white),
+                style: TextStyle(
+                  fontSize: 45,
+                  fontFamily: 'ConcertOne',
+                  color: Colors.white,
                   height: -0.5,
                 ),
               ),
@@ -67,23 +68,21 @@ class TimesPlayers extends StatelessWidget {
       children: [
         Text(
           "$name ",
-          style: GoogleFonts.concertOne(
-            textStyle: TextStyle(
-              fontSize: 35,
-              color: Color.fromARGB(255, 237, 199, 53),
-              height: 0.9,
-            ),
+          style: TextStyle(
+            fontSize: 35,
+            fontFamily: 'ConcertOne',
+            color: Color.fromARGB(255, 237, 199, 53),
+            height: 0.9,
           ),
         ),
         Text(
           "$playerQuantity",
           textAlign: TextAlign.right,
-          style: GoogleFonts.concertOne(
-            textStyle: TextStyle(
-              fontSize: 50,
-              color: Color.fromARGB(255, 43, 74, 142),
-              height: 0.9,
-            ),
+          style: TextStyle(
+            fontFamily: 'ConcertOne',
+            fontSize: 50,
+            color: Color.fromARGB(255, 43, 74, 142),
+            height: 0.9,
           ),
         ),
         RotatedBox(
@@ -93,8 +92,10 @@ class TimesPlayers extends StatelessWidget {
             child: Text(
               "jogadores",
               textAlign: TextAlign.right,
-              style: GoogleFonts.concertOne(
-                textStyle: TextStyle(fontSize: 9, color: Colors.blue.shade900),
+              style: TextStyle(
+                fontSize: 9,
+                fontFamily: 'ConcertOne',
+                color: Colors.blue.shade900,
               ),
             ),
           ),

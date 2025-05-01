@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ActionColumn extends StatelessWidget {
   final String position;
@@ -29,19 +28,17 @@ class ActionColumn extends StatelessWidget {
                         backgroundColor: const Color.fromARGB(255, 43, 74, 142),
                         shape: const CircleBorder(),
                       ),
-                      onPressed: () {
-                      },
+                      onPressed: () {},
                       child: const Icon(Icons.add, color: Colors.white),
                     ),
                     Transform.translate(
-                      offset: const Offset(0, -5),
+                      offset: const Offset(0, -1),
                       child: Text(
                         action,
-                        style: GoogleFonts.concertOne(
-                          textStyle: const TextStyle(
-                            fontSize: 30,
-                            color: Colors.white,
-                          ),
+                        style: TextStyle(
+                          fontFamily: 'ConcertOne',
+                          fontSize: 30,
+                          color: Colors.white,
                         ),
                       ),
                     ),

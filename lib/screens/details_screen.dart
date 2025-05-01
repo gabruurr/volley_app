@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:volley_app/screens/score_screen.dart';
 
 import '../widgets/details_widgets/stats_details.dart';
@@ -46,12 +45,12 @@ class _DetailsScreenState extends State<DetailsScreen> {
               children: [
                 Text(
                   "Estatsísticas da partida",
-                  style: GoogleFonts.concertOne(
-                    textStyle: const TextStyle(
+                  style: const TextStyle(
+                      fontFamily: 'ConcertOne',
                       fontSize: 26,
                       color: Color(0xFF2B4A8E),
                     ),
-                  ),
+                  
                 ),
                 Image.asset('assets/ball.png', height: 30),
               ],

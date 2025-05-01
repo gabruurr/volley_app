@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({super.key});
@@ -17,15 +16,19 @@ class HomeHeader extends StatelessWidget {
             children: [
               Text(
                 ' Volley',
-                style: GoogleFonts.concertOne(
-                  textStyle: TextStyle(fontSize: 50, color: Colors.white),
+                style: TextStyle(
+                  fontFamily: 'ConcertOne',
+                  fontSize: 50,
+                  color: Colors.white,
                   height: 1.1,
                 ),
               ),
-            Text(
+              Text(
                 'do fim de semana',
-                style: GoogleFonts.concertOne(
-                  textStyle: TextStyle(fontSize: 10, color: Colors.white),
+                style: TextStyle(
+                  fontSize: 10,
+                  fontFamily: 'ConcertOne',
+                  color: Colors.white,
                   height: 0.8,
                 ),
               ),

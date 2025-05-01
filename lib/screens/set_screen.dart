@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:volley_app/main.dart';
 import 'package:volley_app/screens/result_screen.dart';
 import 'package:volley_app/widgets/blue_button.dart';
@@ -57,7 +56,7 @@ class _SetScreenState extends State<SetScreen> {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10),
                     child: Row(
-                      spacing: 70,
+                      spacing: 75,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         TeamIcon(name: "Ziraldos", letter: "A"),
@@ -79,19 +78,18 @@ class _SetScreenState extends State<SetScreen> {
                         Expanded(
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.end,
-                            spacing: 20,
+                            spacing: 1,
                             children: [
                               Image.asset('assets/ball.png', height: 45),
                               Transform.translate(
-                                offset: Offset(0, -20),
+                                offset: Offset(0, -2),
                                 child: Text(
                                   "12",
-                                  style: GoogleFonts.concertOne(
-                                    textStyle: const TextStyle(
-                                      height: 0,
-                                      fontSize: 60,
-                                      color: Colors.white,
-                                    ),
+                                  style: const TextStyle(
+                                    fontFamily: 'ConcertOne',
+                                    height: 0,
+                                    fontSize: 60,
+                                    color: Colors.white,
                                   ),
                                 ),
                               ),
@@ -105,10 +103,12 @@ class _SetScreenState extends State<SetScreen> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              Text(
-                                "22",
-                                style: GoogleFonts.concertOne(
-                                  textStyle: const TextStyle(
+                              Transform.translate(
+                                offset: Offset(0, 5),
+                                child: Text(
+                                  "22",
+                                  style: const TextStyle(
+                                    fontFamily: 'ConcertOne',
                                     fontSize: 60,
                                     color: Colors.white,
                                   ),
@@ -122,27 +122,26 @@ class _SetScreenState extends State<SetScreen> {
                   ),
 
                   Column(
-                    spacing: 15,
+                    spacing: 2,
                     children: [
+                      Padding(padding: EdgeInsets.symmetric(vertical: 1)),
                       RichText(
                         text: TextSpan(
                           children: [
                             TextSpan(
                               text: "Tempo de Jogo: 1:14'",
-                              style: GoogleFonts.concertOne(
-                                textStyle: const TextStyle(
-                                  fontSize: 16,
-                                  color: Colors.white,
-                                ),
+                              style: const TextStyle(
+                                fontFamily: 'ConcertOne',
+                                fontSize: 12,
+                                color: Colors.white,
                               ),
                             ),
                             TextSpan(
                               text: "00''",
-                              style: GoogleFonts.concertOne(
-                                textStyle: const TextStyle(
-                                  fontSize: 13,
-                                  color: Colors.white,
-                                ),
+                              style: const TextStyle(
+                                fontFamily: 'ConcertOne',
+                                fontSize: 13,
+                                color: Colors.white,
                               ),
                             ),
                           ],
@@ -153,7 +152,7 @@ class _SetScreenState extends State<SetScreen> {
                         widht: 15,
                         fontSize: 23,
                         label: "Placar Geral",
-                        offset: -5,
+                        offset: -2,
                         foreground: Colors.white,
                         destiny: ResultScreen(),
                       ),

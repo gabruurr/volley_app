@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class BlueButton extends StatelessWidget {
   final double height;
@@ -17,7 +16,8 @@ class BlueButton extends StatelessWidget {
     required this.label,
     required this.foreground,
     required this.destiny,
-    required this.offset, required this.fontSize,
+    required this.offset,
+    required this.fontSize,
   });
 
   @override
@@ -41,8 +41,10 @@ class BlueButton extends StatelessWidget {
         offset: Offset(0, offset),
         child: Text(
           label,
-          style: GoogleFonts.concertOne(
-            textStyle: TextStyle(fontSize: fontSize, color: foreground),
+          style: TextStyle(
+            fontSize: fontSize,
+            fontFamily: 'ConcertOne',
+            color: foreground,
           ),
         ),
       ),

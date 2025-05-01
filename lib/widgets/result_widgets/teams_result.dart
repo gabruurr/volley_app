@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class TeamsResult extends StatelessWidget {
   final String name;
@@ -20,7 +19,7 @@ class TeamsResult extends StatelessWidget {
     final isLeft = position == "left";
 
     return Transform.translate(
-      offset: Offset(0, -5),
+      offset: Offset(0, -1),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         spacing: 20,
@@ -28,22 +27,20 @@ class TeamsResult extends StatelessWidget {
         children: [
           Text(
             name,
-            style: GoogleFonts.concertOne(
-              textStyle: TextStyle(
-                fontSize: 16,
-                color: Color.fromARGB(255, 255, 255, 255),
-                height: 0.9,
-              ),
+            style: TextStyle(
+              fontFamily: 'ConcertOne',
+              fontSize: 16,
+              color: Color.fromARGB(255, 255, 255, 255),
+              height: 0.9,
             ),
           ),
           Text(
             "$teamPoint",
-            style: GoogleFonts.concertOne(
-              textStyle: TextStyle(
-                fontSize: 20,
-                color: (foregroundPoints),
-                height: 0.9,
-              ),
+            style: TextStyle(
+              fontFamily: 'ConcertOne',
+              fontSize: 20,
+              color: (foregroundPoints),
+              height: 0.9,
             ),
           ),
           Padding(padding: EdgeInsets.all(2)),

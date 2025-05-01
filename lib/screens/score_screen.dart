@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:volley_app/screens/details_screen.dart';
 import 'package:volley_app/screens/result_screen.dart';
 import 'package:volley_app/widgets/result_widgets/content_column.dart';
@@ -56,11 +55,10 @@ class _ScoreScreenState extends State<ScoreScreen> {
                     padding: const EdgeInsets.only(bottom: 30),
                     child: Text(
                       "PLACAR GERAL",
-                      style: GoogleFonts.concertOne(
-                        textStyle: const TextStyle(
-                          fontSize: 25,
-                          color: Color.fromARGB(255, 43, 74, 142),
-                        ),
+                      style: const TextStyle(
+                        fontFamily: 'ConcertOne',
+                        fontSize: 25,
+                        color: Color.fromARGB(255, 43, 74, 142),
                       ),
                     ),
                   ),
@@ -187,7 +185,7 @@ class _ScoreScreenState extends State<ScoreScreen> {
                       Column(
                         spacing: 10,
                         children: [
-                          Padding(padding: EdgeInsets.symmetric(vertical: 11)),
+                          Padding(padding: EdgeInsets.symmetric(vertical: 20)),
                           ContentColumn(minutes: "0:24'", seconds: "90''"),
                           ContentColumn(minutes: "0:14'", seconds: "23''"),
                           ContentColumn(minutes: "0:35'", seconds: "04''"),

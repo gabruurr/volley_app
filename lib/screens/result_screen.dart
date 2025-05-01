@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:volley_app/screens/score_screen.dart';
 import 'package:volley_app/screens/set_screen.dart';
 import 'package:volley_app/widgets/blue_button.dart';
@@ -45,11 +44,10 @@ class _ResultScreenState extends State<ResultScreen> {
                     children: [
                       Text(
                         "FIM DE SET",
-                        style: GoogleFonts.concertOne(
-                          textStyle: const TextStyle(
-                            fontSize: 25,
-                            color: Color.fromARGB(255, 43, 74, 142),
-                          ),
+                        style: const TextStyle(
+                          fontFamily: 'ConcertOne',
+                          fontSize: 25,
+                          color: Color.fromARGB(255, 43, 74, 142),
                         ),
                       ),
                       Column(
@@ -57,19 +55,19 @@ class _ResultScreenState extends State<ResultScreen> {
                         children: [
                           Text(
                             "Autoconvidados",
-                            style: GoogleFonts.concertOne(
-                              textStyle: const TextStyle(
-                                fontSize: 45,
-                                color: Color.fromARGB(255, 43, 74, 142),
-                              ),
+                            style: const TextStyle(
+                              fontFamily: 'ConcertOne',
+                              fontSize: 45,
+                              color: Color.fromARGB(255, 43, 74, 142),
                             ),
                           ),
                           Text(
                             "VENCEU",
-                            style: GoogleFonts.concertOne(
+                            style: const TextStyle(
+                              fontFamily: 'ConcertOne',
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
-                              color: const Color.fromARGB(255, 43, 74, 142),
+                              color: Color.fromARGB(255, 43, 74, 142),
                             ),
                           ),
                           Padding(padding: EdgeInsets.only(bottom: 30)),
@@ -83,7 +81,7 @@ class _ResultScreenState extends State<ResultScreen> {
                             height: 10,
                             widht: 20,
                             fontSize: 23,
-                            offset: -5,
+                            offset: -2,
                             label: "Terminar",
                             foreground: Colors.white,
                             destiny: ScoreScreen(),
@@ -93,7 +91,7 @@ class _ResultScreenState extends State<ResultScreen> {
                             height: 10,
                             widht: 20,
                             fontSize: 23,
-                            offset: -5,
+                            offset: -2,
                             label: "Novo Set",
                             foreground: Colors.yellow,
                             destiny: SetScreen(),

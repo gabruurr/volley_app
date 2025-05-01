@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class TeamIcon extends StatelessWidget {
   final String letter;
@@ -15,10 +14,11 @@ class TeamIcon extends StatelessWidget {
           radius: 18,
           backgroundColor: const Color.fromARGB(255, 184, 221, 245),
           child: Transform.translate(
-            offset: const Offset(0, -2),
+            offset: const Offset(0, -1),
             child: Text(
               letter,
-              style: GoogleFonts.concertOne(
+              style: TextStyle(
+                fontFamily: 'ConcertOne',
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
                 color: const Color.fromARGB(255, 43, 74, 142),
@@ -29,11 +29,10 @@ class TeamIcon extends StatelessWidget {
         if (name.trim().isNotEmpty)
           Text(
             name,
-            style: GoogleFonts.concertOne(
-              textStyle: const TextStyle(
-                fontSize: 18,
-                color: Color.fromARGB(255, 43, 74, 142),
-              ),
+            style: TextStyle(
+              fontFamily: 'ConcertOne',
+              fontSize: 18,
+              color: Color.fromARGB(255, 43, 74, 142),
             ),
           ),
       ],

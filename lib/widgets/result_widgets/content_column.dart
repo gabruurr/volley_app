@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ContentColumn extends StatelessWidget {
   final String? minutes;
@@ -23,14 +22,18 @@ class ContentColumn extends StatelessWidget {
             children: [
               TextSpan(
                 text: minutes,
-                style: GoogleFonts.concertOne(
-                  textStyle: const TextStyle(fontSize: 16, color: Colors.white),
+                style: TextStyle(
+                  fontSize: 16,
+                  fontFamily: 'ConcertOne',
+                  color: Colors.white,
                 ),
               ),
               TextSpan(
                 text: seconds,
-                style: GoogleFonts.concertOne(
-                  textStyle: const TextStyle(fontSize: 12, color: Colors.white),
+                style: TextStyle(
+                  fontSize: 12,
+                  fontFamily: 'ConcertOne',
+                  color: Colors.white,
                 ),
               ),
             ],
