@@ -50,17 +50,14 @@ class _ScoreScreenState extends State<ScoreScreen> {
           children: [
             Expanded(
               child: Column(
-                spacing: 7,
+                spacing: 6,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 3),
-                    child: Text(
-                      "PLACAR GERAL",
-                      style: const TextStyle(
-                        fontFamily: 'ConcertOne',
-                        fontSize: 25,
-                        color: Color.fromARGB(255, 43, 74, 142),
-                      ),
+                  Text(
+                    "PLACAR GERAL",
+                    style: const TextStyle(
+                      fontFamily: 'ConcertOne',
+                      fontSize: 25,
+                      color: Color.fromARGB(255, 43, 74, 142),
                     ),
                   ),
 
@@ -82,7 +79,7 @@ class _ScoreScreenState extends State<ScoreScreen> {
                       ),
 
                       Container(
-                        width: 370,
+                        width: 390,
                         height: 180,
                         margin: const EdgeInsets.symmetric(horizontal: 10),
                         decoration: BoxDecoration(
