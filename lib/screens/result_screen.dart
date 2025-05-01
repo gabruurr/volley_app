@@ -51,7 +51,6 @@ class _ResultScreenState extends State<ResultScreen> {
                           ),
                         ),
                       ),
-                      const SizedBox(height: 20),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
@@ -74,7 +73,6 @@ class _ResultScreenState extends State<ResultScreen> {
                           ),
                         ],
                       ),
-                      const SizedBox(height: 40),
 
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -98,7 +96,6 @@ class _ResultScreenState extends State<ResultScreen> {
                             foreground: Colors.yellow,
                             destiny: SetScreen(),
                           ),
-                          const SizedBox(width: 20),
                         ],
                       ),
                     ],

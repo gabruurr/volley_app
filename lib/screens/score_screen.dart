@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:volley_app/screens/details_screen.dart';
 import 'package:volley_app/screens/result_screen.dart';
 import 'package:volley_app/widgets/result_widgets/content_column.dart';
 import 'package:volley_app/widgets/result_widgets/teams_result.dart';
@@ -68,12 +69,22 @@ class _ScoreScreenState extends State<ScoreScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       ContentColumn.stats(
-                        Icon(Icons.bar_chart, color: Colors.white),
+                        IconButton(
+                          onPressed: () {
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => DetailsScreen(),
+                              ),
+                            );
+                          },
+                          icon: Icon(Icons.bar_chart, color: Colors.white),
+                        ),
                       ),
 
                       Container(
                         width: 370,
-                        height: 160,
+                        height: 180,
                         margin: const EdgeInsets.symmetric(horizontal: 10),
                         decoration: BoxDecoration(
                           border: Border.all(color: Colors.white),
@@ -83,6 +94,7 @@ class _ScoreScreenState extends State<ScoreScreen> {
                           children: [
                             Expanded(
                               child: Column(
+                                spacing: 4,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   TeamIcon(name: "", letter: "A"),
@@ -133,6 +145,7 @@ class _ScoreScreenState extends State<ScoreScreen> {
 
                             Expanded(
                               child: Column(
+                                spacing: 4,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   TeamIcon(name: "", letter: "B"),
@@ -174,6 +187,7 @@ class _ScoreScreenState extends State<ScoreScreen> {
                       Column(
                         spacing: 10,
                         children: [
+                          Padding(padding: EdgeInsets.symmetric(vertical: 11)),
                           ContentColumn(minutes: "0:24'", seconds: "90''"),
                           ContentColumn(minutes: "0:14'", seconds: "23''"),
                           ContentColumn(minutes: "0:35'", seconds: "04''"),
