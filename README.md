@@ -4,9 +4,8 @@ Este projeto Flutter consiste apenas no layout de um app de Vôlei fictício.
 
 O foco está na construção das telas e no design da interface do usuário. Nenhuma lógica de negócios, armazenamento de dados ou controle de partidas foi implementado — este é um projeto puramente visual.
 
-Olhe releases para instalar o apk
-
-
+> Visite [releases](https://github.com/gabruurr/volley_app/releases)
+ para instalar o arquivo apk
 ## Telas
 Tela Inicial
 
